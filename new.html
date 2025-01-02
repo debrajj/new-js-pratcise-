@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator 2025</title>
+    <link rel="stylesheet" href="cal.css" />
+  </head>
+
+  <body>
+    <div id="calculator">
+      <input type="text" id="display" readonly />
+      <div class="button-container">
+        <button
+          class="button"
+          onclick="resDisplay='' , document.querySelector('#display').value = resDisplay;
+"
+        >
+          C
+        </button>
+
+
+
+        
+        <button
+          class="button"
+          onclick="resDisplay+='1' , document.querySelector('#display').value = resDisplay;
+"
+        >
+          1
+        </button>
+
+        
+
+        <button
+          class="button"
+          onclick="resDisplay+='2' , document.querySelector('#display').value = resDisplay;"
+        >
+          2
+        </button>
+
+        <button
+          class="button"
+          onclick=" resDisplay+='3' , document.querySelector('#display').value=resDisplay;"
+        >
+          3
+        </button>
+
+        <button
+          class="button"
+          onclick="resDisplay+='4' , document.querySelector('#display').value = resDisplay;"
+        >
+          4
+        </button>
+
+        <button
+          class="button"
+          onclick="resDisplay+='5' , document.querySelector('#display').value = resDisplay;"
+        >
+          5
+        </button>
+
+        <button
+          class="button"
+          onclick=" resDisplay+='6' , document.querySelector('#display').value=resDisplay;"
+        >
+          6
+        </button>
+        <button
+          class="button"
+          onclick=" resDisplay+='7' , document.querySelector('#display').value=resDisplay;"
+        >
+          7
+        </button>
+
+        <button
+        class="button"
+        onclick="displayResult+='8' , document.querySelector('#display').value = displayResult;
+"
+      >
+        8
+      </button>
+
+
+        <button
+          class="button"
+          onclick=" resDisplay+='9' , document.querySelector('#display').value=resDisplay;"
+        >
+          9
+        </button>
+        <button
+          class="button"
+          onclick=" resDisplay+='0' , document.querySelector('#display').value=resDisplay;"
+        >
+          0
+        </button>
+        <button
+          class="button"
+          onclick=" resDisplay+='+' , document.querySelector('#display').value=resDisplay;"
+        >
+          +
+        </button>
+        <button
+          class="button"
+          onclick=" resDisplay+='-' , document.querySelector('#display').value=resDisplay;"
+        >
+          -
+        </button>
+        <button
+          class="button"
+          onclick=" resDisplay+='/' , document.querySelector('#display').value=resDisplay;"
+        >
+          /
+        </button>
+        <button
+          class="button"
+          onclick=" resDisplay+='*' , document.querySelector('#display').value=resDisplay;"
+        >
+          *
+        </button>
+        <button
+          class="button"
+          onclick=" resDisplay+='.' , document.querySelector('#display').value=resDisplay;"
+        >
+          .
+        </button>
+
+
+
+        <button
+          class="button"
+          onclick="let res = eval(resDisplay) ; resDisplay=res ; document.querySelector('#display').value=resDisplay;"
+        >
+          =
+        </button>
+
+
+
+      </div>
+    </div>
+
+    <script>
+      let resDisplay = "";
+      document.querySelector("#display").value = resDisplay;
+    </script>
+  </body>
+</html>
