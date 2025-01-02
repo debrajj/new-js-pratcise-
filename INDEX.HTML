@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Button Pratcise</title>
+  </head>
+  <body>
+    <button class="bag" onclick="cart+=1 , document.querySelector(
+      '#bag').innerHTML = `YOUR BAG HAS ${cart} PRODUCTS` ">
+
+
+      ADD TO CART
+
+
+    </button>
+
+
+
+    <button class="wish" onclick="cart=0 , document.querySelector(
+      '#bag').innerHTML = `YOUR BAG HAS ${cart} PRODUCTS` ">MOVE TO WISHLIST</button>
+
+
+
+<button class="sale" onclick="cart+=2 , document.querySelector(
+      '#bag').innerHTML = `YOUR BAG HAS ${cart} PRODUCTS` " 1+1 SALE OFFFER</button>
+
+    <h1 id="bag"></h1>
+
+    <script>
+      let cart = 0;
+      document.querySelector(
+        "#bag"
+      ).innerHTML = `YOUR BAG HAS ${cart} PRODUCTS`;
+    </script>
+  </body>
+</html>
